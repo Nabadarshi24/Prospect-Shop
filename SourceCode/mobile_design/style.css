@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+/* header region design starts here */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(images/header_bg.png);
+    background-repeat: repeat no-repeat;
+    background-size: auto 100%;
+    height: 93px;
+    padding: 0 15px;
+}
+.nav-logo{
+    flex-basis: 70%;
+    margin-top: 20px;
+}
+
+.nav-logo img{
+    width: 236px;
+}
+.nav-menu{
+    flex-basis: 30%;
+    text-align: end;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.nav-menu img{
+    width: 40px;
+}
+.nav-links ul{
+    position: fixed;
+    z-index: 1;
+    top: 93px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #60a32f;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#click{
+    display: none;
+}
+
+.call-div{
+    display: none;
+}
+
+#click:checked + ul{
+    left: 0%;
+}
+
+.nav-links ul li{
+    margin: 20px 0;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+/* end-region */
+
+/* banner-region design starts here */
+
+.banner-bg{
+    position: relative;
+    background-image: url(images/body_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: -87px -28px;
+    background-size: cover;
+    height: 470px;
+    text-align: center;
+}
+
+.banner-bg h2{
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 500;
+    padding: 62px 15px 0 15px;
+    letter-spacing: -1px;
+}
+
+.bottom-text{
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+} 
+.banner-bg .bottom-text small{
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.form-bg{
+    background-image: url(images/container_bg.png);
+    background-repeat: no-repeat;
+    height: 725px;
+    background-size: cover;
+    color: white;
+}
+
+.form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.form p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+}
+.form-logo{
+    padding-top: 33px;
+    overflow: auto;
+}
+.form-logo img{
+    height: 42px;
+    width: auto;
+    margin-left: 15px;
+}
+
+.text-div{
+    float: right;
+}
+.text-div h3{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    margin-right: 15px;
+}
+
+.form-bars input{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border: none;
+}
+.form-bars{
+    padding: 0 14px;
+}
+.download{
+    background-color: rgb(59, 55, 55);
+    overflow: auto;
+    margin: 24px 14px 0 14px;
+    padding: 16px 28px;
+}
+
+.download-txt{
+    width: 62%;
+    display: inline-block;
+}
+.download-txt h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+.download img{
+    width: 35px;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+}
+.privacy{
+    margin-top: 19px;
+}
+/* end-region */
+
+/* about-region design starts here */
+.about-container{
+    background-color: #60a32f;
+    color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 0 15px;
+}
+
+.txt{
+    flex-basis: 50%;
+}
+
+.txt h4{
+    font-size: 33px;
+    font-weight: lighter;
+}
+.logo-div{
+    flex-basis: 50%;
+    text-align: end;
+}
+.logo-div img{
+    width: 34px;
+}
+
+.row{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+}
+.column{
+    padding: 0 13px;
+    margin-top: 18px;
+}
+.column img{
+    margin-left: 100px;
+    width: 44px;
+}
+.column h3{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 19px;
+}
+.column p{
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 16px;
+}
+/* end-region */
+
+/* client-region design starts here */
+
+.client{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 0 15px;
+}
+
+.txt-div{
+    flex-basis: 50%;
+}
+
+.txt-div h4{
+    font-size: 33px;
+    font-weight: lighter;
+    color: #60a32f;
+}
+.client-logo{
+    flex-basis: 50%;
+    text-align: end;
+}
+
+.client-logo img{
+    width: 34px;
+}
+
+.client-row{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.client-column{
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 25px;
+}
+
+.client-column .common-img{
+    width: 130px;
+}
+
+.client-column #client_logo1{
+    width: 65px;
+    margin-top: 23px;
+}
+
+.client-column #client_logo2{
+    width: 145px;
+    margin-top: 64px;
+}
+
+.client-column #client_logo3{
+    width: 147px;
+    margin-top: 75px;
+}
+
+.client-column h3{
+    color: #60a32f;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.client-column h4{
+    color: rgb(121, 117, 117);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.client-column p{
+    color: rgb(82, 77, 77);
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.gray-logo-download-container{
+    margin-top: 53px;
+}
+.gray-logo-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.gray-logo-column{
+    flex-basis: 22%;
+}
+.gray-logo-column img{
+    width: 70px;
+}
+
+.download-bg {
+    background-image: url(images/container_bg_alt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 184px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.download-txt2{
+    width: 35%;
+    display: inline-block;
+    margin: 103px 0 0 65px;
+}
+
+.download-txt2 h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+}
+.download-bg img{
+    width: auto;
+    height: 35px;
+    float: right;
+    margin: 103px 75px 0 0;
+}
+/* end-region */
+
+/* footer-region design starts here */
+footer{
+    background-image: url(images/footer.png);
+    background-repeat: repeat no-repeat;
+    background-size: contain;
+    height: 93px;
+    padding: 0 45px;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    font-size: 13px;
+    padding-top: 30px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+
+
+/* end-region */
